@@ -13,9 +13,9 @@ Example:
 
 DESCRIPTION:
 
-The MVC Html Helper method takes a series of parameter, including
-current page, results per page, total count, and link/text customizations
-to automatically calculate paging and display the resulting HTML.
+MVC Smart Page is an MVC Helper method which returns HTML to display paged search result indexes.
+To use, simply pass the Smart Page method a series of parameters to customize the style of your paging, as described below.
+Smart Page will automatically calculate paging and display the resulting HTML.
 
 You can configure MVC Smart Page to set the minimum pages before paging displays,
 number of adjacent pages, number of non-adjacent pages, and even alter the value
@@ -37,7 +37,7 @@ Method:
 /// <param name="nextText">Text to show for "Next" link</param>
 /// <param name="minPagesForPaging">Minimum number of pages in order for paging to display, otherwise all pages are displayed.</param>
 /// <param name="adjacentPageCount">Number of pages to show around active page index (including left + right + index). For example: 3 => 1, 2, 3 | 2, [3], 4 | 3, [4], 5 | 48, 49, [50]</param>
-/// <param name="nonAdjacentPageCount">Text to show for "Next" link</param>
+/// <param name="nonAdjacentPageCount">Number of pages to show for non-active page indexes (such as right-most numbers, if a left-most number is active)</param>
 /// <param name="pageCalculation">Optional anonymous method, allowing you alter the returned page index for each link by specifying a function that receives the page index and returns the "modified" page index. For example, converting 2 => 21 or converting 272 => 5421. Set to NULL to use the original page index.</param>
 
 public static string SmartPage(this HtmlHelper helper,

@@ -26,7 +26,7 @@ namespace SearchResultsPaging.Helpers
         /// <param name="nextText">Text to show for "Next" link</param>
         /// <param name="minPagesForPaging">Minimum number of pages in order for paging to display, otherwise all pages are displayed.</param>
         /// <param name="adjacentPageCount">Number of pages to show around active page index (including left + right + index). For example: 3 => 1, 2, 3 | 2, [3], 4 | 3, [4], 5 | 48, 49, [50]</param>
-        /// <param name="nonAdjacentPageCount">Text to show for "Next" link</param>
+        /// <param name="nonAdjacentPageCount">Number of pages to show for non-active page indexes (such as right-most numbers, if a left-most number is active)</param>
         /// <param name="pageCalculation">Optional anonymous method, allowing you alter the returned page index for each link by specifying a function that receives the page index and returns the "modified" page index. For example, converting 2 => 21 or converting 272 => 5421. Set to NULL to use the original page index.</param>
         /// <returns>string html</returns>
         public static string SmartPage(this HtmlHelper helper, int intCurrentPage, int intPerPage, int intNumberofItems, string pageNumberPrefix, string linkUrl, string onClick, string previousText, string nextText, int minPagesForPaging = 3, int adjacentPageCount = 3, int nonAdjacentPageCount = 1, Func<int, int> pageCalculation = null)
