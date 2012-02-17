@@ -1,4 +1,4 @@
-Smart Page - MVC .NET Paging Search Results with Digg Style Paging
+MVC Smart Page - MVC .NET Paging Search Results with Digg Style Paging
 
 This is an example MVC C# ASP .NET web application, demonstrating
 how to page search results using a Digg-style type of paging.
@@ -15,7 +15,7 @@ The MVC Html Helper method takes a series of parameter, including
 current page, results per page, total count, and link/text customizations
 to automatically calculate paging and display the resulting HTML.
 
-You can configure the Smart Page to set the minimum pages before paging displays,
+You can configure MVC Smart Page to set the minimum pages before paging displays,
 number of adjacent pages, number of non-adjacent pages, and even alter the value
 for the page number (in case your search method takes a search result index, rather
 than a page index).
