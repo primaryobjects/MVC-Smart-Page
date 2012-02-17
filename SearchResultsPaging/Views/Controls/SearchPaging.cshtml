@@ -4,7 +4,7 @@
 @model PagingModel
 
     <div>
-        Displaying @Model.CurrentResultsMin - @Model.CurrentResultsMax of @Model.TotalResults results
+        Displaying <b>@Model.CurrentResultsMin</b> - <b>@Model.CurrentResultsMax</b> of <b>@Model.TotalResults</b> results
     </div>
     <div>
         @Html.Raw(Html.PageResults(Model.CurrentPage, Model.PageSize, Model.TotalResults, "<span style='color:#c0c0c0;'>|</span>", "#", "onPageResults([PAGE]);", "< Prev", "Next >", 3, 3, 1))

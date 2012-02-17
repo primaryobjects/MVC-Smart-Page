@@ -18,8 +18,13 @@
 @using (Ajax.BeginForm("Index", null, new AjaxOptions { UpdateTargetId = "searchResultsDiv" }, new { Id = "searchForm" }))
 {
     @Html.Hidden("page", Model.CurrentPage)
-    @Html.Hidden("pageSize", Model.PageSize)
 
+    <br />
+    @Html.LabelFor(e => e.PageSize, "Page Size: ")
+    @Html.TextBoxFor(e => e.PageSize, new { value = Model.PageSize })
+    <input type="submit" value="Update" />
+    <hr />
+    
     <div id="searchResultsDiv">
         @Html.Partial("/Views/Controls/SearchResults.cshtml")
     </div>

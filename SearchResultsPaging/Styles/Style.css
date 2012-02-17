@@ -1,12 +1,14 @@
 ﻿* { margin:0; padding:0;}
 html, body { height:100%; }
-body { background:#fff; font-family:Tahoma, Geneva, sans-serif; font-size:100%; line-height:1em; color:#404141; }
+body { background:#fff; font-family:Tahoma, Geneva, sans-serif; font-size:100%; line-height:1em; color:#404141; padding:10px 0 0 10px; }
 
 a {color:#0000ff; text-decoration: none; }
-a:hover {text-decoration:none; text-decoration: underline; }
+a:hover {color:#aaaaff; text-decoration:none; }
 
 div { padding: 0 0 10px 0; }
 
 h2 { padding: 0 0 15px 0; }
 
 span { padding: 0 5px 0 5px; }
+
+hr { margin: 25px 0 25px 0; }

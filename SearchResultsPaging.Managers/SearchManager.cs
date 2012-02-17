@@ -24,16 +24,20 @@ namespace SearchResultsPaging.Managers
         {
             SearchModel searchModel = new SearchModel();
 
-            // Set paging information.
-            searchModel.CurrentPage = page;
-            searchModel.CurrentMin = (page * pageSize) - pageSize + 1;
-            searchModel.CurrentMax = searchModel.CurrentMin + pageSize - 1;
-            searchModel.PageSize = pageSize;
-            searchModel.TotalResults = treasureList.Count;
-
             // Set search points.
             int start = (page * pageSize) - pageSize;
             int end = start + pageSize;
+            if (end > treasureList.Count)
+            {
+                end = treasureList.Count;
+            }
+
+            // Set paging information.
+            searchModel.CurrentPage = page;
+            searchModel.CurrentMin = start + 1;
+            searchModel.CurrentMax = end;
+            searchModel.PageSize = pageSize;
+            searchModel.TotalResults = treasureList.Count;
 
             // Run search.
             for (int i = start; i < end; i++)
