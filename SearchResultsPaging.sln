@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchResultsPaging", "SearchResultsPaging\SearchResultsPaging.csproj", "{4943B65C-7F5B-4EB6-B9F7-60B3A3E8C549}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchResultsPaging.Types", "SearchResultsPaging.Types\SearchResultsPaging.Types.csproj", "{2BB72FA6-5385-474E-AECD-069E906D9073}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchResultsPaging.Managers", "SearchResultsPaging.Managers\SearchResultsPaging.Managers.csproj", "{118B8004-2F72-4078-93DA-4470C96AB09C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4943B65C-7F5B-4EB6-B9F7-60B3A3E8C549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4943B65C-7F5B-4EB6-B9F7-60B3A3E8C549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4943B65C-7F5B-4EB6-B9F7-60B3A3E8C549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4943B65C-7F5B-4EB6-B9F7-60B3A3E8C549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BB72FA6-5385-474E-AECD-069E906D9073}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BB72FA6-5385-474E-AECD-069E906D9073}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BB72FA6-5385-474E-AECD-069E906D9073}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BB72FA6-5385-474E-AECD-069E906D9073}.Release|Any CPU.Build.0 = Release|Any CPU
+		{118B8004-2F72-4078-93DA-4470C96AB09C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{118B8004-2F72-4078-93DA-4470C96AB09C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{118B8004-2F72-4078-93DA-4470C96AB09C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{118B8004-2F72-4078-93DA-4470C96AB09C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,26 @@
+﻿@using SearchResultsPaging.Types
+
+@model SearchModel
+
+@{
+    ViewBag.Title = "Search Results Paging Example";
+}
+
+<script type="text/javascript">
+    function onPageResults(page) {
+        $('#page').val(page);
+        $('#searchForm').submit();
+    }
+</script>
+
+<h2>Search Results Paging Example</h2>
+
+@using (Ajax.BeginForm("Index", null, new AjaxOptions { UpdateTargetId = "searchResultsDiv" }, new { Id = "searchForm" }))
+{
+    @Html.Hidden("page", Model.CurrentPage)
+    @Html.Hidden("pageSize", Model.PageSize)
+
+    <div id="searchResultsDiv">
+        @Html.Partial("/Views/Controls/SearchResults.cshtml")
+    </div>
+}
