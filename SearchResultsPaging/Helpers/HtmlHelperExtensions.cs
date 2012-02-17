@@ -11,6 +11,7 @@ namespace SearchResultsPaging.Helpers
     {
         /// <summary>
         /// Displays paging for a list of search results.
+        /// Created by Kory Becker http://www.primaryobjects.com/articledirectory.aspx
         /// Modified code, based upon http://www.davidpirek.com/blog/aspnet-mvc-paging-digg-style
         /// Example display: Prev 1 2 3 4 5 ... 6 7 8 9 ... 10 11 12 Next
         /// </summary>
@@ -28,7 +29,7 @@ namespace SearchResultsPaging.Helpers
         /// <param name="nonAdjacentPageCount">Text to show for "Next" link</param>
         /// <param name="pageCalculation">Optional anonymous method, allowing you alter the returned page index for each link by specifying a function that receives the page index and returns the "modified" page index. For example, converting 2 => 21 or converting 272 => 5421. Set to NULL to use the original page index.</param>
         /// <returns>string html</returns>
-        public static string PageResults(this HtmlHelper helper, int intCurrentPage, int intPerPage, int intNumberofItems, string pageNumberPrefix, string linkUrl, string onClick, string previousText, string nextText, int minPagesForPaging = 3, int adjacentPageCount = 3, int nonAdjacentPageCount = 1, Func<int, int> pageCalculation = null)
+        public static string SmartPage(this HtmlHelper helper, int intCurrentPage, int intPerPage, int intNumberofItems, string pageNumberPrefix, string linkUrl, string onClick, string previousText, string nextText, int minPagesForPaging = 3, int adjacentPageCount = 3, int nonAdjacentPageCount = 1, Func<int, int> pageCalculation = null)
         {
             string strPreviousText = previousText;
             string strNextText = nextText;
