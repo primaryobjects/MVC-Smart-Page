@@ -1,8 +1,5 @@
 MVC Smart Page - MVC .NET Search Result Pager with Customizable Paging
 
-This is an example MVC C# ASP .NET web application, demonstrating
-how to page search results using a smart, slick, configurable pager.
-
 Example:
 
 1 | 2 | 3 ... 10
@@ -13,8 +10,9 @@ Example:
 
 DESCRIPTION:
 
-MVC Smart Page is an MVC Helper method which returns HTML to display paged search result indexes, similar
-to the traditional "Digg-style" search results pager. To use, simply pass the Smart Page method a series of parameters to customize the style of your paging, as described below. Smart Page will automatically calculate paging and display the resulting HTML.
+MVC Smart Page is an MVC Helper method which returns HTML to display paged search result indexes, similar to the traditional "Digg-style" search results pager. MVC Smart Page provides a solution for displaying a smart, slick, and configurable pager.
+
+To use, simply pass the Smart Page method a series of parameters to customize the style of your paging, as described below. Smart Page will automatically calculate paging and display the resulting HTML.
 
 You can configure MVC Smart Page to set the minimum pages before paging displays, number of adjacent pages, number of non-adjacent pages, and even alter the value for the page number (in case your search method takes a search result index, rather than a page index).
 
