@@ -20,8 +20,15 @@
     @Html.Hidden("page", Model.CurrentPage)
 
     <br />
-    @Html.LabelFor(e => e.PageSize, "Page Size: ")
-    @Html.TextBoxFor(e => e.PageSize, new { value = Model.PageSize })
+    <div style="float:left; width:175px; font-size:14px;">@Html.LabelFor(e => e.PageSize, "Page Size:")</div>
+    <div style="float:left;">@Html.TextBoxFor(e => e.PageSize, new { value = Model.PageSize })</div>
+    <div style="clear:both;"></div>
+    <div style="float:left; width:175px; font-size:14px;">@Html.LabelFor(e => e.PageSize, "Adjacent Page Count:")</div>
+    <div style="float:left;">@Html.TextBoxFor(e => e.AdjacentPageCount, new { value = Model.AdjacentPageCount })</div>
+    <div style="clear:both;"></div>
+    <div style="float:left; width:175px; font-size:14px;">@Html.LabelFor(e => e.NonAdjacentPageCount, "Non-Adjacent Page Count:")</div>
+    <div style="float:left;">@Html.TextBoxFor(e => e.NonAdjacentPageCount, new { value = Model.NonAdjacentPageCount })</div>
+    <div style="clear:both;"></div>
     <input type="submit" value="Update" onclick="$('#page').val(1);" />
     <hr />
     

@@ -13,6 +13,8 @@ namespace SearchResultsPaging.Types
         public int PageSize { get; set; }
         public int CurrentMin { get; set; }
         public int CurrentMax { get; set; }
+        public int AdjacentPageCount { get; set; }
+        public int NonAdjacentPageCount { get; set; }
 
         public SearchModel()
         {

@@ -6,6 +6,8 @@
     <div>
         Displaying <b>@Model.CurrentResultsMin</b> - <b>@Model.CurrentResultsMax</b> of <b>@Model.TotalResults</b> results
     </div>
+
+    <!-- MVC Smart Page -->
     <div>
-        @Html.Raw(Html.SmartPage(Model.CurrentPage, Model.PageSize, Model.TotalResults, "<span style='color:#c0c0c0;'>|</span>", "#", "onSmartPage([PAGE]);", "< Prev", "Next >", 3, 3, 1))
+        @Html.Raw(Html.SmartPage(Model.CurrentPage, Model.PageSize, Model.TotalResults, "<span style='color:#c0c0c0;'>|</span>", "#", "onSmartPage([PAGE]);", "< Prev", "Next >", 3, Model.AdjacentPageCount, Model.NonAdjacentPageCount))
     </div>

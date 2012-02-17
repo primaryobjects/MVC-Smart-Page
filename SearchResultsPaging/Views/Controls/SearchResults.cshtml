@@ -2,9 +2,10 @@
 
 @model SearchModel
 
-        @Html.Partial("/Views/Controls/SearchPaging.cshtml", new PagingModel(Model.TotalResults, Model.CurrentPage, Model.PageSize, Model.CurrentMax, Model.CurrentMin))
+        @Html.Partial("/Views/Controls/SearchPaging.cshtml", new PagingModel(Model.TotalResults, Model.CurrentPage, Model.PageSize, Model.CurrentMax, Model.CurrentMin, Model.AdjacentPageCount, Model.NonAdjacentPageCount))
         <br />
 
+        <!-- Search Results -->
         @foreach (Treasure treasure in Model.TreasureList)
         {
             <div>[@treasure.Id] @treasure.Name - $@treasure.Value</div>

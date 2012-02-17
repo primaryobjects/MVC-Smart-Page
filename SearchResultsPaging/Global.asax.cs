@@ -22,7 +22,7 @@ namespace SearchResultsPaging
             routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{page}", // URL with parameters
-                new { controller = "Home", action = "Index", page = 1, pageSize = 10 } // Parameter defaults
+                new { controller = "Home", action = "Index", page = 1, pageSize = 10, adjacentPageCount = 3, nonAdjacentPageCount = 1 } // Parameter defaults
             );
         }
 
